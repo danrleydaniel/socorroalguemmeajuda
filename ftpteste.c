@@ -18,6 +18,8 @@ int main(int argc, char *argv[]){
   char msg[100];
 
   meusocket = socket(AF_INET, SOCK_STREAM, 0);
+  
+  destinatario.sin_addr.s_addr = inet_addr("195.144.107.198");
 
   destinatario.sin_family = AF_INET;
 
